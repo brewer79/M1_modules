@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Speroteck_Helloworld>
+            <version>0.1.0</version>
+        </Speroteck_Helloworld>
+    </modules>
+    <frontend>
+        <routers>
+            <helloworld>
+                <use>standard</use>
+                <args>
+                    <module>Speroteck_Helloworld</module>
+                    <frontName>helloworld</frontName>
+                </args>
+            </helloworld>
+        </routers>
+        <layout>
+            <updates>
+                <helloworld>
+                    <file>speroteck/helloworld.xml</file>
+                </helloworld>
+            </updates>
+        </layout>
+    </frontend>
+    <global>
+        <blocks>
+            <helloworld>
+                <class>Speroteck_Helloworld_Block</class>
+            </helloworld>
+        </blocks>
+    </global>
+</config>

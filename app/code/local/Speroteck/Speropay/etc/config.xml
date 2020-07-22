@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Speroteck_Speropay>
+            <version>0.1.0</version>
+        </Speroteck_Speropay>
+    </modules>
+    <global>
+        <models>
+            <speroteck_speropay>
+                <class>Speroteck_Speropay_Model</class>
+            </speroteck_speropay>
+        </models>
+        <blocks>
+            <speroteck_speropay>
+                <class>Speroteck_Speropay_Block</class>
+            </speroteck_speropay>
+        </blocks>
+    </global>
+    <default>
+        <payment>
+            <speroteck_speropay>
+                <active>1</active>
+                <model>speroteck_speropay/method_speropay</model>
+                <order_status>pending</order_status>
+                <title>SperoPay</title>
+                <allowspecific>0</allowspecific>
+                <group>offline</group>
+            </speroteck_speropay>
+        </payment>
+    </default>
+</config>

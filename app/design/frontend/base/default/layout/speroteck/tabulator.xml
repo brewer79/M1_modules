@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<layout version="1.0.0">
+    <default>
+        <reference name="footer">
+            <block type="cms/block" name="cms_footer_links_speroteck" before="cms_footer_links">
+                <action method="setBlockId"><block_id>footer_links_speroteck</block_id></action>
+            </block>
+            <block type="cms/block" name="cms_footer_links" before="footer_links">
+                <action method="setBlockId"><block_id>footer_links_company</block_id></action>
+            </block>
+            <block type="cms/block" name="cms_footer_links_sm" after="footer_links2">
+                <action method="setBlockId"><block_id>footer_links_sm</block_id></action>
+            </block>
+        </reference>
+    </default>
+    <tabulator_index_index translate="label" module="Speroteck_Tabulator">
+        <reference name="content">
+            <block type="tabulator/tabulator" name="tabulator" template="speroteck/tabulator.phtml"/>
+        </reference>
+    </tabulator_index_index>
+</layout>

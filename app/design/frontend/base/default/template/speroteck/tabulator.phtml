@@ -1,0 +1,46 @@
+<?php
+$itemsGreen = $this->getGreenToysCollection();
+$itemsRed = $this->getRedToysCollection();
+$itemsBlack = $this->getBlackToysCollection();
+$itemsMagenta = $this->getMagentaToysCollection();
+?>
+<div id="tabs" style="width: 500px;">
+    <ul>
+        <li><a href="#tabs-1">Green</a></li>
+        <li><a href="#tabs-2">Red</a></li>
+        <li><a href="#tabs-3">Black</a></li>
+        <li><a href="#tabs-4">Magenta</a></li>
+    </ul>
+    <div id="tabs-1">
+        <!--        <p>Green toys here</p>-->
+        <ul>
+            <?php foreach ($itemsGreen as $item): ?>
+                <li> <a href="<?php echo $item->getData('name') ?>"><?php echo $item->getData('name') ?></a></li>
+            <?php endforeach ?>
+        </ul>
+    </div>
+    <div id="tabs-2">
+        <!--        <p>Red toys here</p>-->
+        <ul>
+            <?php foreach ($itemsRed as $item): ?>
+                <li> <a href="<?php echo $item->getData('name') ?>"><?php echo $item->getData('name') ?></a></li>
+            <?php endforeach ?>
+        </ul>
+    </div>
+    <div id="tabs-3">
+        <!--        <p>Black toys here</p>-->
+        <ul>
+            <?php foreach ($itemsBlack as $item): ?>
+                <li> <a href="<?php echo $item->getData('name') ?>"><?php echo $item->getData('name') ?></a></li>
+            <?php endforeach ?>
+        </ul>
+    </div>
+    <div id="tabs-4">
+        <!--        <p>Magenta toys here</p>-->
+        <ul>
+            <?php foreach ($itemsMagenta as $item): ?>
+                <li> <a href="<?php echo $item->getData('name') ?>"><?php echo $item->getData('name') ?></a></li>
+            <?php endforeach ?>
+        </ul>
+    </div>
+</div>

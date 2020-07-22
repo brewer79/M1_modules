@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<config>
+    <modules>
+        <Speroteck_Tabulator>
+            <version>1.0.0</version>
+        </Speroteck_Tabulator>
+    </modules>
+    <global>
+        <!--<models>-->
+            <!--<tabulator>-->
+                <!--<class>Speroteck_Tabulator_Model</class>-->
+            <!--</tabulator>-->
+        <!--</models>-->
+        <blocks>
+            <tabulator>
+                <class>Speroteck_Tabulator_Block</class>
+            </tabulator>
+        </blocks>
+    </global>
+    <frontend>
+        <routers>
+            <tabulator>
+                <use>standard</use>
+                <args>
+                    <module>Speroteck_Tabulator</module>
+                    <frontName>tabulator</frontName>
+                </args>
+            </tabulator>
+        </routers>
+        <layout>
+            <updates>
+                <tabulator module="Speroteck_Tabulator">
+                    <file>speroteck/tabulator.xml</file>
+                </tabulator>
+            </updates>
+        </layout>
+    </frontend>
+</config>

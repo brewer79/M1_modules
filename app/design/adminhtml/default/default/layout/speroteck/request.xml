@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<layout>
+    <adminhtml_request>
+        <reference name="content">
+            <block type="request/adminhtml_request" name="request" />
+        </reference>
+    </adminhtml_request>
+
+    <adminhtml_request_edit>
+        <update handle="editor"/>
+    </adminhtml_request_edit>
+</layout>

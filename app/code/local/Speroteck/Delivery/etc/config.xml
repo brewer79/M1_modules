@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Speroteck_Delivery>
+            <version>0.1.0</version>
+        </Speroteck_Delivery>
+    </modules>
+    <global>
+        <models>
+            <speroteck_delivery>
+                <class>Speroteck_Delivery_Model</class>
+            </speroteck_delivery>
+        </models>
+    </global>
+    <default>
+        <carriers>
+            <speroteck_delivery>
+                <active>1</active>
+                <sallowspecific>1</sallowspecific>
+                <model>speroteck_delivery/gift</model>
+                <name>Gift</name>
+                <price>0.00</price>
+                <title>Delivery</title>
+                <specificerrmsg>This shipping method is currently unavailable. If you would like to ship using this shipping method, please contact us.</specificerrmsg>
+            </speroteck_delivery>
+        </carriers>
+    </default>
+</config>
